@@ -1,0 +1,17 @@
+:root{
+    --main__font : "TheJamsil";
+    --main__win : "NanumSquare";
+    --main__mac : "GmarketSans";
+
+    --font__size : "16px";
+
+    --color__black: #000;
+    --color__white: #fff;
+
+    --bg__gray: #f0f0f0;
+    --bg__black: #000;
+}
+
+@media (max-width: 800px) {
+
+}
