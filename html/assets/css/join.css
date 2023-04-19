@@ -29,22 +29,6 @@
     content: ' *';
     color: #ff0000;
 }
-.join__form button {
-    display: block;
-    background-color: var(--color__black);
-    color: var(--color__white);
-    margin: 2em auto;
-    font-size: 1.4em;
-    padding: 0.4em 2em;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
-.join__form button:hover {
-    background-color: var(--color__white);
-    color: var(--color__black);
-    border: 3px solid #000;
-}
 
 @media (max-width:600px) {
     .intro__inner.center .intro__text {

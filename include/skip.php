@@ -1,4 +1,4 @@
-<div id="skip ">
+<div id="skip">
         <a href="#header">헤더 바로가기</a>
         <a href="#main">컨텐츠 바로가기</a>
         <a href="#footer">푸터 바로가기</a>
