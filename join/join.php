@@ -19,7 +19,7 @@
         <div class="intro__inner center bmstyle">
             <picture class="intro__image">
                 <source srcset="../assets/img/join01-min.png, ../assets/img/join01@2x-min.png 2x, ../assets/img/join01@3x-min.png 3x"/>
-                <img src="../assets/img/join01.png" alt="joinimg">
+                <img src="../assets/img/join01.png" alt="join img">
             </picture>
             <p class="intro__text">
                 회원 가입 시 더 다양한 정보를 자유롭게 시청하실 수 있습니다.
