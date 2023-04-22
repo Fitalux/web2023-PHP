@@ -38,5 +38,30 @@
     cursor: pointer;
     background-color: var(--color__black);
     color: var(--color__white);
-
+}
+/* board__intro */
+.board__intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3em 0;
+}
+.board__intro.center {
+    flex-direction: column;
+}
+.board__intro.center .intro__image {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 5%;
+}
+.board__intro.center .intro__text {
+    text-align: center;
+    padding: 0 10%;
+    font-size: 1.4em;
+}
+.board__intro.center .intro__header {
+    font-size: 30px;
+    margin-bottom: 40px;
+    display: inline-block;
+    margin-top: 60px;
 }

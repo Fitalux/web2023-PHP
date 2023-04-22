@@ -1,0 +1,107 @@
+
+.board__inner {
+    padding: 10% 0 0 0;
+}
+.board__inner h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 5%;
+}
+.board__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+.board__main__btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5em;
+    align-items: center;
+    /* margin-bottom: 3%; */
+}
+.board__search__result {
+    padding: 1.5em;
+}
+.board__search__result span{
+    color: red;
+}
+.search__input{
+   border-radius: 10px;
+    padding: 0.5%;
+}
+.search__select {
+    border-radius: 10px;
+    padding: 0.5%;
+}
+.search__btn {
+    border-radius: 10px;
+    padding: 0.5%;
+    background-color: var(--color__white);
+    width: 6em;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.search__btn:hover {
+    background-color: var(--color__black);
+    color: var(--color__white);
+}
+.write__btn {
+    border-radius: 10px;
+    padding: 8px;
+    background-color: var(--color__black);
+    width: 5em;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.write__btn a {
+    color: var(--color__white);
+}
+.write__btn:hover {
+    background-color: (--color__white);
+}
+.write__btn a:hover{
+    color: var(--color__black);
+}
+.board__table .board__table__header {
+    background-color: #c6c6c6;   
+}
+.board__table {
+    width: 100%;
+    border-collapse : collapse;
+    border-top: 5px solid var(--color__black);
+    border-bottom: 5px solid var(--color__black);
+}
+.board__table table tr {
+    border-bottom: 2px solid var(--color__black);
+}
+.board__table table td{
+    text-align: center;
+    padding: 1em;
+}
+.board__move {
+    display: flex;
+    justify-content: center;
+    margin: 5em;
+    text-align: center;
+}
+.board__move div {
+    border: 2px solid #666;
+    padding: 10px 20px;
+}
+.board__move div.active {
+    border: 1px solid var(--color__black);
+    background-color:  var(--color__black);
+}
+.board__move div.active a {
+    color: var(--color__white);
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0 5% 0;
+    color: #666;
+}
+.footer__inner a {
+    color: #666;
+}
