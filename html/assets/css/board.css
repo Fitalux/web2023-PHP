@@ -72,6 +72,9 @@
     border-top: 5px solid var(--color__black);
     border-bottom: 5px solid var(--color__black);
 }
+.board__table table {
+    width: 100%;
+}
 .board__table table tr {
     border-bottom: 2px solid var(--color__black);
 }
