@@ -9,6 +9,7 @@
     <?php include "../include/head.php" ?>
 </head>
 <body class="gray">
+
     <?php include "../include/skip.php" ?>
     <!-- skip -->
 
@@ -16,8 +17,8 @@
     <!-- header -->
     
     <main id="main" class="container">
-        <div class="intro__inner center bmstyle">
-            <picture class="intro__image">
+        <div class="intro__inner center bmStyle">
+            <picture class="intro__images">
                 <source srcset="../assets/img/join01-min.png, ../assets/img/join01@2x-min.png 2x, ../assets/img/join01@3x-min.png 3x"/>
                 <img src="../assets/img/join01.png" alt="join img">
             </picture>
@@ -27,7 +28,7 @@
         </div>
         <!-- intro__inner -->
 
-        <div class="join__inner container">
+        <div class="join__inner">
             <h2>회원가입</h2>
             <div class="join__form">
                 <form action="joinSave.php" name="join" method="post">
@@ -38,7 +39,7 @@
                             <input type="email" id="youEmail" name="youEmail" class="inputStyle" placeholder="이메일을 작성해주세요." required>
                         </div>
                         <div>
-                            <label for="youName" class="required" >이름</label>
+                            <label for="youName" class="required">이름</label>
                             <input type="text" id="youName" name="youName"  class="inputStyle" placeholder="이름을 입력하세요." required>
                         </div>
                         <div>
@@ -52,11 +53,16 @@
                         <div>
                             <label for="youPhone" class="required">연락처</label>
                             <input type="text" id="youPhone" name="youPhone" placeholder="연락 가능한 연락처를 입력하세요." required>
-                        </div><button type="submit" class="btnStyle">회원가입</button>
+                        </div>
+                        <button type="submit" class="btnStyle">회원가입</button>
                     </fieldset>
                 </form>
             </div>
         </div>
     </main>
+     <!-- //main -->
+
+     <?php include "../include/footer.php" ?>
+    <!-- //footer -->
 </body>
 </html>

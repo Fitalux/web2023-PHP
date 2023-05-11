@@ -1,110 +1,147 @@
-
+/* board__inner 
+   +board__search
+   +board__table
+   +board__pages
+   +board__view
+   +board__view
+   +board__write
+*/
+/* board__inner */
 .board__inner {
-    padding: 10% 0 0 0;
+  margin-bottom: 100px;
 }
-.board__inner h2 {
-    font-size: 30px;
-    text-align: center;
-    padding: 5%;
+.board__images img {
+  border-radius: 100px;
 }
-.board__header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2%;
+/* board__search */
+.board__search {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 120px;
 }
-.board__main__btn {
-    display: flex;
-    justify-content: space-between;
-    gap: 0.5em;
-    align-items: center;
-    /* margin-bottom: 3%; */
+.board__search .left {
+  width: 40%;
 }
-.board__search__result {
-    padding: 1.5em;
+.board__search .left em {
+  color: red;
 }
-.board__search__result span{
-    color: red;
+.board__search .right {
+  width: 60%;
+  text-align: right;
 }
-.search__input{
-   border-radius: 10px;
-    padding: 0.5%;
+.board__search .right input {
+  border: 0;
+  background-color: var(--color__white);
+  padding: 9px 30px;
+  border-radius: 5px;
+  height: 40px;
 }
-.search__select {
-    border-radius: 10px;
-    padding: 0.5%;
-}
-.search__btn {
-    border-radius: 10px;
-    padding: 0.5%;
-    background-color: var(--color__white);
-    width: 6em;
-    transition: all 0.3s;
-    cursor: pointer;
-}
-.search__btn:hover {
-    background-color: var(--color__black);
-    color: var(--color__white);
-}
-.write__btn {
-    border-radius: 10px;
-    padding: 8px;
-    background-color: var(--color__black);
-    width: 5em;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-.write__btn a {
-    color: var(--color__white);
-}
-.write__btn:hover {
-    background-color: (--color__white);
-}
-.write__btn a:hover{
-    color: var(--color__black);
-}
-.board__table .board__table__header {
-    background-color: #c6c6c6;   
+.board__search .right select {
+  border: 0;
+  width: 90px;
+  height: 40px;
+  padding: 11px;
+  border-radius: 5px;
 }
 .board__table {
-    width: 100%;
-    border-collapse : collapse;
-    border-top: 5px solid var(--color__black);
-    border-bottom: 5px solid var(--color__black);
+  margin-top: 10px;
+  margin-bottom: 60px;
+  border-top: 2px solid var(--color__black);
+  border-bottom: 2px solid var(--color__black);
+  text-align: center;
 }
-.board__table table {
-    width: 100%;
+.board__table table th {
+  background-color: var(--bg__gray2);
+  border-bottom: 1px solid var(--color__black);
+  padding: 15px 5px;
+  font-weight: 500;
 }
-.board__table table tr {
-    border-bottom: 2px solid var(--color__black);
+.board__table table td {
+  padding: 15px 5px;
+  border-bottom: 1px solid var(--color__black);
 }
-.board__table table td{
-    text-align: center;
-    padding: 1em;
+.board__table table tr:hover {
+  background-color: var(--bg__gray2);
 }
-.board__move {
-    display: flex;
-    justify-content: center;
-    margin: 5em;
-    text-align: center;
+.board__table table td a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
 }
-.board__move div {
-    border: 2px solid #666;
-    padding: 10px 20px;
+
+/* board__pages */
+.board__pages {
+  margin-bottom: 100px;
 }
-.board__move div.active {
-    border: 1px solid var(--color__black);
-    background-color:  var(--color__black);
+.board__pages ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.board__move div.active a {
-    color: var(--color__white);
+.board__pages li a {
+  border: 1px solid var(--bg__gray3);
+  padding: 10px 13px;
+  /* border 겹친거 풀어줌 */
+  margin-left: -1px;
 }
-.footer__inner {
-    display: flex;
-    justify-content: space-between;
-    padding: 1% 0 5% 0;
-    color: #666;
+.board__pages li:hover a {
+  background-color: var(--bg__gray2);
 }
-.footer__inner a {
-    color: #666;
+.board__pages li.active  a {
+  background-color: var(--color__black);
+  color: var(--color__white);
+} 
+
+/* board__view */
+.board__view {
+  margin-top: 40px;
+  border-top: 2px solid var(--color__black);
+  border-bottom: 2px solid var(--color__black);
+}
+.board__view table td, 
+.board__view table th {
+  padding: 15px;
+  border-bottom: 1px solid var(--color__black);
+}
+.board__view table tr:last-child td {
+  height: 500px;
+  vertical-align: top;
+}
+.board__view table th {
+  background-color: var(--bg__gray2);
+  font-weight: 500;
+}
+.board__btn {
+  margin-top: 20px;
+  text-align: right;
+}
+
+
+/* board__write */
+.board__write {
+  padding: 50px 0 100px;
+}
+.board__write label {
+  width: 100%;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+.board__write input {
+  margin-bottom: 50px;
+}
+.board__write textarea {
+  padding: 2em;
+  /* text-area를 못 움직이게 해줌 */
+  resize: none;
+}
+.board__write button {
+  cursor: pointer;
+  margin-top: 10px;
+  float: right;
+  transition: all 0.2s;
+}
+.board__write button:hover {
+  background-color: var(--bg__gray3);
+  color: var(--color__black);
 }

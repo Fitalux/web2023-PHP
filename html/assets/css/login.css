@@ -1,14 +1,14 @@
 /* login__inner */
-.login__inner{
-    width: 100%;
+.login__inner {
     max-width: 500px;
-    margin: 0 auto;
+    width: 100%;
+    margin:  0 auto;
     padding: 100px 0;
     text-align: center;
 }
 .login__inner > h2 {
     font-size: 34px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .login__inner > p {
     font-size: 20px;
@@ -23,8 +23,8 @@
     margin-bottom: 10px;
 }
 .login__footer {
-    font-weight: 300;
     text-align: left;
+    font-weight: 300;
 }
 .login__footer a {
     text-decoration: underline;

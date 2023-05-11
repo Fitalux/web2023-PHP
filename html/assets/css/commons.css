@@ -23,6 +23,10 @@
 .black {
     background-color: var(--bg__black);
 }
+.white {
+    background-color: var(--color__white) !important;
+    color: var(--color__black) !important;
+}
 
 /* font */
 body.macintoshi {
@@ -34,38 +38,9 @@ body.window {
 
 /* container */
 .container {
-    width: 100%;
-    max-width: 1260px;
+    width: 1260px;
     margin: 0 auto;
 }
-/* boder Style */
-.bmstyle {
-    border-bottom: 4px solid var(--color__black);
-    position: relative;
-}
-.bmstyle::after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: var(--color__black);
-}
-.btstyle {
-    border-top: 4px solid var(--color__black);
-    position: relative;
-}
-.btstyle::before {
-    content: '';
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    left: 0;
-    top: -10px;
-    background-color: var(--color__black);
-}
-
 
 /* 간격설정 */
 .mt10 {margin-top: 10px !important;}
@@ -83,28 +58,40 @@ body.window {
 .mb50 {margin-bottom: 50px !important;}
 .mb60 {margin-bottom: 60px !important;}
 .mb70 {margin-bottom: 70px !important;}
+.mb80 {margin-bottom: 80px !important;}
+.mb90 {margin-bottom: 90px !important;}
+.mb100 {margin-bottom: 100px !important;}
 
-/* Input Style */
-.inputStyle {
-    background-color: #f6f6f6f6;
+.center {text-align: center !important;}
+
+
+/* border Style */
+.bmStyle {
+    border-bottom: 3px solid var(--color__black);
+    position: relative;
+}
+.bmStyle::after {
+    content: '';
     width: 100%;
-    border-radius: 15px;
-    padding: 1em 2em;
-    border: 0;
-    font-weight: 300;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--color__black);
 }
-
-/* label */
-label.required::after {
-    content: ' *';
-    color: #ff0000;
+.btStyle {
+    border-top: 3px solid var(--color__black);
+    position: relative;
 }
-label {
-    display: block;
-    margin-bottom: 2px;
-    font-size: 1.2em;
+.btStyle::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    background-color: var(--color__black);
 }
-
 /* button Style */
 .btnStyle {
     display: block;
@@ -118,41 +105,90 @@ label {
 }
 .btnStyle2 {
     width: 100%;
-    font-size: 1.4em;
+    font-size: 1.2em;
     background-color: var(--color__black);
     color:var(--color__white);
     border-radius: 10px;
     padding: 0.6em;
     cursor: pointer;
 }
+.btnStyle3 {
+    display: inline-block;
+    padding: 0.5em;
+    background-color: var(--bg__black);
+    width: 90px;
+    color: var(--color__white);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    border: 0;
+}
+.btnStyle4 {
+    display: inline-block;
+    padding: 0.8em 2em;
+    margin: 0 0.5em;
+    background-color: var(--color__black);
+    color: var(--color__white);
+    font-size: 1rem;
+    font-weight: 300;
+    border-radius: 10px;
+    text-align: center;
+}
 
-/* liststyle */
-.liststyle {}
+/* Input Style */
+.inputStyle {
+    background-color: #f6f6f6f6;
+    width: 100%;
+    border-radius: 15px;
+    padding: 1em 2em;
+    border: 0;
+    font-weight: 300;
+}
+.inputStyle2 {
+    width: 50%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1em 2em;
+    border: 0;
+    font-weight: 300;
+}
 
-.liststyle2 li{
+/* label */
+label {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 1.2em;
+}
+label.required::after {
+    content: ' *';
+    color: #ff0000;
+}
+/* list Style */
+.listStyle li {
     padding-left: 16px;
     position: relative;
 }
-.liststyle2 li::before{
+.listStyle li::before {
     content: '';
-    width: 6px;
-    height: 6px;
-    border-color: 1px solid var(--color__black);
+    width: 5px;
+    height: 5px;
+    background-color: var(--color__black);
     border-radius: 50%;
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
 }
-.liststyle li{
+.listStyle2 li {
     padding-left: 16px;
     position: relative;
 }
-.liststyle li::before{
+.listStyle2 li::before {
     content: '';
-    width: 5px;
-    height: 5px;
-    background-color: var(--color__black);
+    width: 6px;
+    height: 6px;
+    border: 1px solid var(--color__black);
     border-radius: 50%;
     position: absolute;
     left: 0;

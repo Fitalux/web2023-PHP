@@ -9,6 +9,7 @@
     <?php include "../include/head.php" ?>
 </head>
 <body class="gray">
+
     <?php include "../include/skip.php" ?>
     <!-- skip -->
 
@@ -16,8 +17,8 @@
     <!-- header -->
 
      <main id="main" class="container">
-        <div class="intro__inner center bmstyle">
-            <picture class="intro__image">
+        <div class="intro__inner center bmStyle">
+            <picture class="intro__images">
                 <source srcset="../assets/img/joinEnd01.png"/>
                 <img src="../assets/img/joinEnd01.png" alt="joinEndimg">
             </picture>
@@ -53,7 +54,7 @@
             $_SESSION['youEmail'] = $memberInfo['youEmail'];
             $_SESSION['youName'] = $memberInfo['youName'];
 
-            Header("Location:../main/main.php");
+            Header("Location: ../main/main.php");
         }
     }
 ?>

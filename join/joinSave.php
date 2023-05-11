@@ -9,6 +9,7 @@
     <?php include "../include/head.php" ?>
 </head>
 <body class="gray">
+
     <?php include "../include/skip.php" ?>
     <!-- skip -->
 
@@ -16,8 +17,8 @@
     <!-- header -->
 
      <main id="main" class="container">
-        <div class="intro__inner center bmstyle">
-            <picture class="intro__image">
+        <div class="intro__inner center bmStyle">
+            <picture class="intro__images">
                 <source srcset="../assets/img/joinEnd01.png"/>
                 <img src="../assets/img/joinEnd01.png" alt="joinEndimg">
             </picture>
@@ -44,7 +45,6 @@
 
                 if($check_mail == false) {
                     msg ("이메일을 다시 한 번 확인하세요.");
-                    exit;
                 }
 
                 //이름
@@ -79,14 +79,14 @@
                 if($result) {
                     $count = $result -> num_rows;
                     
-                    if($count == 0) {
+                    if($count == 0){
                         $isEmailCheck = true;
                     } else {
                         msg("입력하신 이메일과 일치하는 회원정보가 있습니다. 아이디 찾기를 실행해주세요.");
                         exit;
                     }
                 } else {
-                    msg ("error : 관리자에게 문의하여 주시길 바랍니다. 불편을 드려 죄송합니다.");
+                    msg ("error 1: 관리자에게 문의하여 주시길 바랍니다. 불편을 드려 죄송합니다.");
                     exit;
                 }
 
@@ -134,6 +134,8 @@
     </main>
     <!-- main -->
 
+    <?php include "../include/footer.php" ?>
+    <!-- //footer -->
 
 </body>
 </html>

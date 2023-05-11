@@ -2,9 +2,9 @@
     include "../connect/connect.php";
     include "../connect/session.php";
 
-    echo "<pre>";
-    var_dump($_SESSION);
-    echo "</pre>";
+    // echo "<pre>";
+    // var_dump($_SESSION);
+    // echo "</pre>";
 ?>
 
 <!DOCTYPE html>
@@ -18,6 +18,7 @@
     <?php include "../include/head.php" ?>
 </head>
 <body class="gray">
+
     <?php include "../include/skip.php" ?>
     <!-- skip -->
 
@@ -25,8 +26,8 @@
     <!-- header -->
 
     <main id="main" class="container">
-        <div class="intro__inner bmstyle">
-            <picture class="intro__image">
+        <div class="intro__inner bmStyle">
+            <picture class="intro__images">
                 <source srcset="../assets/img/intro01.png, ../assets/img/intro01@2x.png 2x"/>
                 <img src="../assets/img/intro01.png" alt="introimg">
             </picture>
